@@ -50,7 +50,6 @@
 
 /* remove border*/
 .page__content {
-
   .archive__item-title {
     margin-top: 1em;
     border-bottom: none;
@@ -69,6 +68,7 @@
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
+
   img {
     width: 100%;
   }
@@ -104,6 +104,63 @@
 
   .page__meta {
     margin: 0 0 4px;
+  }
+
+  /* =========================================================
+     ✅ ADD: thumbnail-left layout for list items (publications)
+     - Works only when teaser exists (i.e., Selected section)
+     - Requires archive-single.html to render teaser in list view
+     ========================================================= */
+  .archive__item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .archive__item-teaser {
+    flex: 0 0 120px;
+    max-width: 120px;
+    margin: 0; /* list에서 위아래 여백 제거 */
+  }
+
+  .archive__item-teaser img {
+    display: block;
+    width: 120px;
+    height: auto;
+  }
+
+  /* 본문이 오른쪽으로 가도록 */
+  .archive__item-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  /* 작은 화면에서는 썸네일 줄이기 */
+  @include breakpoint($small) {
+    .archive__item-teaser {
+      flex-basis: 140px;
+      max-width: 140px;
+    }
+
+    .archive__item-teaser img {
+      width: 140px;
+    }
+  }
+
+  /* 모바일(아주 좁은 폭)에서는 세로로 쌓기 */
+  @media (max-width: 480px) {
+    .archive__item {
+      display: block;
+    }
+
+    .archive__item-teaser {
+      max-width: 100%;
+      margin: 0 0 0.75rem 0;
+    }
+
+    .archive__item-teaser img {
+      width: 100%;
+    }
   }
 }
 
