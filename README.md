@@ -1,2 +1,2 @@
-# KyleKWKim.github.io
+# doohyunpark.github.io
 Personal academic homepage
