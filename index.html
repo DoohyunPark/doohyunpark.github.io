@@ -410,8 +410,8 @@
     .pub-figure img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
+      object-fit: contain;
+      background: var(--bg-secondary);
     }
 
     .pub-item:hover .pub-figure img { transform: scale(1.05); }
@@ -814,7 +814,7 @@
   
       <!-- 1 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image2.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2026ICLR.png')">
           <img src="image2.png" alt="ICLR 2026 Figure">
         </div>
         <div class="pub-content">
@@ -832,7 +832,7 @@
   
       <!-- 2 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image3.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2026ISBI_01.png')">
           <img src="image3.png" alt="ISBI 2026 Figure">
         </div>
         <div class="pub-content">
@@ -850,7 +850,7 @@
   
       <!-- 3 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image4.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2026ISBI_02.png')">
           <img src="image4.png" alt="ISBI 2026 Figure 2">
         </div>
         <div class="pub-content">
@@ -868,7 +868,7 @@
   
       <!-- 4 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image5.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2025npjDM.png')">
           <img src="image5.png" alt="npj Precision Oncology 2025 Figure">
         </div>
         <div class="pub-content">
@@ -885,7 +885,7 @@
   
       <!-- 5 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image6.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2024BioEng.png')">
           <img src="image6.png" alt="Bioengineering 2024 Figure">
         </div>
         <div class="pub-content">
@@ -902,7 +902,7 @@
   
       <!-- 6 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image7.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2024Diagnostics.png')">
           <img src="image7.png" alt="Diagnostics 2024 Figure">
         </div>
         <div class="pub-content">
@@ -920,7 +920,7 @@
   
       <!-- 7 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image8.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2024ER.png')">
           <img src="image8.png" alt="European Radiology 2024 Figure">
         </div>
         <div class="pub-content">
@@ -938,7 +938,7 @@
   
       <!-- 8 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image9.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2023SR.png')">
           <img src="image9.png" alt="Scientific Reports 2023 Figure">
         </div>
         <div class="pub-content">
@@ -955,7 +955,7 @@
   
       <!-- 9 -->
       <div class="pub-item">
-        <div class="pub-figure" onclick="openLightbox('image10.png')">
+        <div class="pub-figure" onclick="openLightbox('publication_figures/2022ER.png')">
           <img src="image10.png" alt="European Radiology 2022 Figure">
         </div>
         <div class="pub-content">
@@ -979,7 +979,6 @@
       <div class="pub-list">
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image11.png')"><img src="image11.png" alt="Other 1"></div>
           <div class="pub-content">
             <div class="pub-venue">ISBI 2026 · abstract</div>
             <h3 class="pub-title">Prompt-Induced Bias from One-Shot Multimodal Large Language Models Prompting in Medical Imaging</h3>
@@ -989,7 +988,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image12.png')"><img src="image12.png" alt="Other 2"></div>
           <div class="pub-content">
             <div class="pub-venue">ISBI 2026 · abstract</div>
             <h3 class="pub-title">Prompt Dominance in Medical Multimodal Large Language Models</h3>
@@ -999,7 +997,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image13.png')"><img src="image13.png" alt="Other 3"></div>
           <div class="pub-content">
             <div class="pub-venue">npj Digital Medicine · 2025</div>
             <h3 class="pub-title">Interpretable Multimodal Transformer for Prediction of Molecular Subtypes and Grades in Adult-type Diffuse Gliomas</h3>
@@ -1009,7 +1006,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image14.png')"><img src="image14.png" alt="Other 4"></div>
           <div class="pub-content">
             <div class="pub-venue">Preprints · 2025</div>
             <h3 class="pub-title">Multi-center Validation of Pulmonary Nodule Classification Model for Lung Cancer Screening</h3>
@@ -1019,7 +1015,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image15.png')"><img src="image15.png" alt="Other 5"></div>
           <div class="pub-content">
             <div class="pub-venue">MIDL 2025 · short paper</div>
             <h3 class="pub-title">Attention-based Interpretable Deep Learning with Radiomic Features for Pulmonary Nodule Classification</h3>
@@ -1029,7 +1024,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image16.png')"><img src="image16.png" alt="Other 6"></div>
           <div class="pub-content">
             <div class="pub-venue">ECR 2025 · Oral Presentation</div>
             <h3 class="pub-title">Foundation Model-based Unsupervised CT Kernel Conversion for Standardizing Emphysema Quantification</h3>
@@ -1039,7 +1033,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image17.png')"><img src="image17.png" alt="Other 7"></div>
           <div class="pub-content">
             <div class="pub-venue">ECR 2025</div>
             <h3 class="pub-title">Evaluation Metrics for Computer-Aided Detection Systems in Medical AI: What You Need to Know</h3>
@@ -1049,7 +1042,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image18.png')"><img src="image18.png" alt="Other 8"></div>
           <div class="pub-content">
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Deep Learning-based Lesion Segmentation for Patients with Usual Interstitial Pneumonia in High-Resolution CT: A pilot study</h3>
@@ -1059,7 +1051,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image19.png')"><img src="image19.png" alt="Other 9"></div>
           <div class="pub-content">
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Fully Automated Segment-Anything-Model for Robust Lobe Segmentation in Patients with Interstitial Lung Disease</h3>
@@ -1069,7 +1060,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image20.png')"><img src="image20.png" alt="Other 10"></div>
           <div class="pub-content">
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Deep Learning-based Slice Thickness Reduction for Lung Nodule Detection of Thick Slice Chest CT</h3>
@@ -1079,7 +1069,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image21.png')"><img src="image21.png" alt="Other 11"></div>
           <div class="pub-content">
             <div class="pub-venue">WCLC 2024</div>
             <h3 class="pub-title">Nodule Type Classification for Lung Cancer Screening with CT</h3>
@@ -1089,7 +1078,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image22.png')"><img src="image22.png" alt="Other 12"></div>
           <div class="pub-content">
             <div class="pub-venue">ESTI 2024</div>
             <h3 class="pub-title">A Standardized Performance Evaluation Metric for Chest CT Nodule Detection</h3>
@@ -1099,7 +1087,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image23.png')"><img src="image23.png" alt="Other 13"></div>
           <div class="pub-content">
             <div class="pub-venue">RSNA 2024</div>
             <h3 class="pub-title">A Multi-center Retrospective Study of Nodule Type Classification using Artificial Intelligence for Lung-RADS Scoring with CT</h3>
@@ -1109,7 +1096,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image24.png')"><img src="image24.png" alt="Other 14"></div>
           <div class="pub-content">
             <div class="pub-venue">RSNA 2024</div>
             <h3 class="pub-title">Quantity or Certainty: Can Ambiguously Annotated Data Improve Lung Nodule Detection Performance?</h3>
@@ -1119,7 +1105,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image25.png')"><img src="image25.png" alt="Other 15"></div>
           <div class="pub-content">
             <div class="pub-venue">MICCAI 2024</div>
             <h3 class="pub-title">LLM-guided Multi-modal Multiple Instance Learning for 5-year Overall Survival Prediction of Lung Cancer</h3>
@@ -1129,7 +1114,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image26.png')"><img src="image26.png" alt="Other 16"></div>
           <div class="pub-content">
             <div class="pub-venue">ISMRM 2024 · Oral Presentation</div>
             <h3 class="pub-title">Unified Diffusion model for Multi-contrast Ensembling Synthesis</h3>
@@ -1139,7 +1123,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image27.png')"><img src="image27.png" alt="Other 17"></div>
           <div class="pub-content">
             <div class="pub-venue">ISMRM 2024 · Oral Presentation</div>
             <h3 class="pub-title">Deep Learning Algorithm for Prediction of Molecular Subtypes and Grades in Adult-type Diffuse Gliomas: According to the 2021 WHO Updates</h3>
@@ -1149,7 +1132,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image28.png')"><img src="image28.png" alt="Other 18"></div>
           <div class="pub-content">
             <div class="pub-venue">Diagnostics · 2024</div>
             <h3 class="pub-title">Deep Learning-based Joint Effusion Classification in Adult Knee Radiographs: A Multi-Center Prospective Study</h3>
@@ -1159,7 +1141,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image29.png')"><img src="image29.png" alt="Other 19"></div>
           <div class="pub-content">
             <div class="pub-venue">LNCS · 2023 (MICCAI SEG.A Technical Paper)</div>
             <h3 class="pub-title">M3F: Multi-Field-of-View Feature Fusion Network for Aortic Vessel Tree Segmentation in CT Angiography</h3>
@@ -1169,7 +1150,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image30.png')"><img src="image30.png" alt="Other 20"></div>
           <div class="pub-content">
             <div class="pub-venue">CICS · 2023</div>
             <h3 class="pub-title">Foundation Models in Healthcare: Applications, Challenges, and Future Directions</h3>
@@ -1179,7 +1159,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image31.png')"><img src="image31.png" alt="Other 21"></div>
           <div class="pub-content">
             <div class="pub-venue">ISMRM · 2018</div>
             <h3 class="pub-title">Iterative Cross-Domain Deep-Learning Approach for Reconstructing Undersampled Radial MRI</h3>
@@ -1189,7 +1168,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image32.png')"><img src="image32.png" alt="Other 22"></div>
           <div class="pub-content">
             <div class="pub-venue">ISMRM · 2018</div>
             <h3 class="pub-title">Deep Sinogram Learning for Radial MRI: Comparison with k-space and Image Learning</h3>
@@ -1199,7 +1177,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image33.png')"><img src="image33.png" alt="Other 23"></div>
           <div class="pub-content">
             <div class="pub-venue">Medical Physics · 2018</div>
             <h3 class="pub-title">Correction of severe beam‐hardening artifacts via a high‐order linearization function using a prior‐image‐based parameter selection method</h3>
@@ -1209,7 +1186,6 @@
         </div>
   
         <div class="pub-item">
-          <div class="pub-figure" onclick="openLightbox('image34.png')"><img src="image34.png" alt="Other 24"></div>
           <div class="pub-content">
             <div class="pub-venue">SPIE Medical Imaging · 2017</div>
             <h3 class="pub-title">Beam Hardening Correction Using Length Linearization</h3>
