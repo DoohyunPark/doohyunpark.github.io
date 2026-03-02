@@ -403,12 +403,12 @@
     
     .pub-item:hover { border-left-color: var(--accent); }
 
-    .pub-figure {
+    ..pub-figure {
       width: 180px;
       height: 120px;
       overflow: hidden;
       border: 1px solid var(--border);
-      background: var(--bg-secondary);
+      background: #ffffff;
       flex-shrink: 0;
       cursor: zoom-in;
     }
@@ -417,7 +417,7 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      background: var(--bg-secondary);
+      background: #ffffff;
     }
 
     .pub-item:hover .pub-figure img { transform: scale(1.05); }
@@ -455,8 +455,11 @@
     }
 
     .pub-authors .me {
-      font-weight: 600;
+      font-weight: 700;
       color: var(--text-primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1.5px;
     }
 
     .pub-links { display: flex; gap: 1rem; }
@@ -989,7 +992,6 @@
             <div class="pub-venue">ISBI 2026 · abstract</div>
             <h3 class="pub-title">Prompt-Induced Bias from One-Shot Multimodal Large Language Models Prompting in Medical Imaging</h3>
             <p class="pub-authors">I Park, J Baek, <span class="me">D Park</span></p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -998,7 +1000,6 @@
             <div class="pub-venue">ISBI 2026 · abstract</div>
             <h3 class="pub-title">Prompt Dominance in Medical Multimodal Large Language Models</h3>
             <p class="pub-authors">I Park, J Baek, <span class="me">D Park</span></p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1007,7 +1008,6 @@
             <div class="pub-venue">npj Digital Medicine · 2025</div>
             <h3 class="pub-title">Interpretable Multimodal Transformer for Prediction of Molecular Subtypes and Grades in Adult-type Diffuse Gliomas</h3>
             <p class="pub-authors">Y Byeon, YW Park, S Lee, <span class="me">D Park</span>, H Shin, K Han, JH Chang, SH Kim, SK Lee, SS Ahn, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1016,7 +1016,6 @@
             <div class="pub-venue">Preprints · 2025</div>
             <h3 class="pub-title">Multi-center Validation of Pulmonary Nodule Classification Model for Lung Cancer Screening</h3>
             <p class="pub-authors"><span class="me">D Park</span>, JH Kang, C Park</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1025,7 +1024,6 @@
             <div class="pub-venue">MIDL 2025 · short paper</div>
             <h3 class="pub-title">Attention-based Interpretable Deep Learning with Radiomic Features for Pulmonary Nodule Classification</h3>
             <p class="pub-authors"><span class="me">D Park</span>, N Lee, S Lim</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1034,7 +1032,6 @@
             <div class="pub-venue">ECR 2025 · Oral Presentation</div>
             <h3 class="pub-title">Foundation Model-based Unsupervised CT Kernel Conversion for Standardizing Emphysema Quantification</h3>
             <p class="pub-authors"><span class="me">D Park</span>, J Kang, J Jeong</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1043,7 +1040,6 @@
             <div class="pub-venue">ECR 2025</div>
             <h3 class="pub-title">Evaluation Metrics for Computer-Aided Detection Systems in Medical AI: What You Need to Know</h3>
             <p class="pub-authors"><span class="me">D Park</span></p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1052,7 +1048,6 @@
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Deep Learning-based Lesion Segmentation for Patients with Usual Interstitial Pneumonia in High-Resolution CT: A pilot study</h3>
             <p class="pub-authors"><span class="me">D Park</span>, J Kang, J Jeong, KM Moon</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1061,7 +1056,6 @@
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Fully Automated Segment-Anything-Model for Robust Lobe Segmentation in Patients with Interstitial Lung Disease</h3>
             <p class="pub-authors">S Lim, <span class="me">D Park</span>, J Jeong, C Park, KM Moon</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1070,7 +1064,6 @@
             <div class="pub-venue">JRC 2025</div>
             <h3 class="pub-title">Deep Learning-based Slice Thickness Reduction for Lung Nodule Detection of Thick Slice Chest CT</h3>
             <p class="pub-authors">J Jeong, <span class="me">D Park</span>, JH Kang, M Kim, HY Kim, W Choi, SY Ham</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1079,7 +1072,6 @@
             <div class="pub-venue">WCLC 2024</div>
             <h3 class="pub-title">Nodule Type Classification for Lung Cancer Screening with CT</h3>
             <p class="pub-authors"><span class="me">D Park</span>, J Kang, C Park, J Kim</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1088,7 +1080,6 @@
             <div class="pub-venue">ESTI 2024</div>
             <h3 class="pub-title">A Standardized Performance Evaluation Metric for Chest CT Nodule Detection</h3>
             <p class="pub-authors"><span class="me">D Park</span>, C Park, J Kang, J Kim</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1097,7 +1088,6 @@
             <div class="pub-venue">RSNA 2024</div>
             <h3 class="pub-title">A Multi-center Retrospective Study of Nodule Type Classification using Artificial Intelligence for Lung-RADS Scoring with CT</h3>
             <p class="pub-authors"><span class="me">D Park</span>, J Kang, C Park, J Jeong</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1106,7 +1096,6 @@
             <div class="pub-venue">RSNA 2024</div>
             <h3 class="pub-title">Quantity or Certainty: Can Ambiguously Annotated Data Improve Lung Nodule Detection Performance?</h3>
             <p class="pub-authors">C Park, J Kang, <span class="me">D Park</span>, J Jeong</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1115,7 +1104,6 @@
             <div class="pub-venue">MICCAI 2024</div>
             <h3 class="pub-title">LLM-guided Multi-modal Multiple Instance Learning for 5-year Overall Survival Prediction of Lung Cancer</h3>
             <p class="pub-authors">K Kim, Y Lee, <span class="me">D Park</span>, T Eo, D Youn, H Lee, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1124,7 +1112,6 @@
             <div class="pub-venue">ISMRM 2024 · Oral Presentation</div>
             <h3 class="pub-title">Unified Diffusion model for Multi-contrast Ensembling Synthesis</h3>
             <p class="pub-authors">Y Lee, Y Shin, <span class="me">D Park</span>, G Son, T Eo, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1133,7 +1120,6 @@
             <div class="pub-venue">ISMRM 2024 · Oral Presentation</div>
             <h3 class="pub-title">Deep Learning Algorithm for Prediction of Molecular Subtypes and Grades in Adult-type Diffuse Gliomas: According to the 2021 WHO Updates</h3>
             <p class="pub-authors">Y Byeon, YW Park, S Lee, H Shin, <span class="me">D Park</span>, SS Ahn, S-K Lee, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1142,7 +1128,6 @@
             <div class="pub-venue">Diagnostics · 2024</div>
             <h3 class="pub-title">Deep Learning-based Joint Effusion Classification in Adult Knee Radiographs: A Multi-Center Prospective Study</h3>
             <p class="pub-authors">H Won, HS Lee, D Youn, <span class="me">D Park</span>, T Eo, W Kim, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1151,7 +1136,6 @@
             <div class="pub-venue">LNCS · 2023 (MICCAI SEG.A Technical Paper)</div>
             <h3 class="pub-title">M3F: Multi-Field-of-View Feature Fusion Network for Aortic Vessel Tree Segmentation in CT Angiography</h3>
             <p class="pub-authors">Y Byeon, H Kim, K Kim, <span class="me">D Park</span>, E Choi, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1160,7 +1144,6 @@
             <div class="pub-venue">CICS · 2023</div>
             <h3 class="pub-title">Foundation Models in Healthcare: Applications, Challenges, and Future Directions</h3>
             <p class="pub-authors">H Won, <span class="me">D Park</span>, T Eo, Y Lee, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1169,7 +1152,6 @@
             <div class="pub-venue">ISMRM · 2018</div>
             <h3 class="pub-title">Iterative Cross-Domain Deep-Learning Approach for Reconstructing Undersampled Radial MRI</h3>
             <p class="pub-authors"><span class="me">D Park</span>, T Eo, T Kim, J Jang, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1178,7 +1160,6 @@
             <div class="pub-venue">ISMRM · 2018</div>
             <h3 class="pub-title">Deep Sinogram Learning for Radial MRI: Comparison with k-space and Image Learning</h3>
             <p class="pub-authors">T Kim, T Eo, <span class="me">D Park</span>, Y Jun, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1187,7 +1168,6 @@
             <div class="pub-venue">Medical Physics · 2018</div>
             <h3 class="pub-title">Correction of severe beam‐hardening artifacts via a high‐order linearization function using a prior‐image‐based parameter selection method</h3>
             <p class="pub-authors">D Oh, S Kim, <span class="me">D Park</span>, S Choi, H Song, Y Choi, S Moon, J Baek, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
@@ -1196,7 +1176,6 @@
             <div class="pub-venue">SPIE Medical Imaging · 2017</div>
             <h3 class="pub-title">Beam Hardening Correction Using Length Linearization</h3>
             <p class="pub-authors">D Oh, S Kim, <span class="me">D Park</span>, D Hwang</p>
-            <div class="pub-links"><a href="#" target="_blank" rel="noopener"><i class="fas fa-link"></i> URL</a></div>
           </div>
         </div>
   
