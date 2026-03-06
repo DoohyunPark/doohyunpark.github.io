@@ -430,47 +430,111 @@
 
     .collaborators-title {
       margin-top: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       font-family: var(--font-display);
       font-weight: 500;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--text-secondary);
     }
     
-    /* 로고 grid */
     .collaborator-logos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 1.2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem 2.5rem;
     }
     
-    /* 로고 카드 */
     .logo-card {
-      height: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid var(--border);
-      background: var(--bg-card);
+      height: 44px;
     }
     
-    /* 실제 로고 */
     .logo-card img {
-      max-height: 48px;
-      max-width: 100%;
+      display: block;
+      max-height: 38px;
+      max-width: 180px;
       width: auto;
       height: auto;
       object-fit: contain;
-    
+      opacity: 0.72;
       filter: grayscale(100%);
-      opacity: 0.75;
-      transition: all 0.2s ease;
+      transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
     }
     
     .logo-card img:hover {
-      filter: grayscale(0%);
       opacity: 1;
+      filter: grayscale(0%);
+      transform: translateY(-1px);
     }
+    
+    /* 로고별 미세 보정 */
+    .logo-card img[alt="Yonsei University"] {
+      max-height: 54px;
+      max-width: 54px;
+    }
+    
+    .logo-card img[alt="D&P"] {
+      max-height: 30px;
+      max-width: 190px;
+    }
+    
+    .logo-card img[alt="Dankook University Hospital"] {
+      max-height: 42px;
+      max-width: 250px;
+    }
+    
+    .logo-card img[alt="Kangbuk Samsung Hospital"] {
+      max-height: 46px;
+      max-width: 170px;
+    }
+    
+    .logo-card img[alt="Kyungpook National University Chilgok Hospital"] {
+      max-height: 46px;
+      max-width: 220px;
+    }
+    
+    .logo-card img[alt="LG"] {
+      max-height: 42px;
+      max-width: 130px;
+    }
+    
+    .logo-card img[alt="Severance Hospital"] {
+      max-height: 34px;
+      max-width: 240px;
+    }
+    
+    .logo-card img[alt="Samsung Medical Center"] {
+      max-height: 30px;
+      max-width: 180px;
+    }
+    
+    .logo-card img[alt="VUNO"] {
+      max-height: 34px;
+      max-width: 170px;
+    }
+    
+    @media (max-width: 768px) {
+      .collaborator-logos {
+        gap: 1.25rem 1.5rem;
+      }
+    
+      .logo-card {
+        height: 36px;
+      }
+    
+      .logo-card img {
+        max-height: 30px;
+        max-width: 150px;
+      }
+    
+      .logo-card img[alt="Yonsei University"] {
+        max-height: 42px;
+        max-width: 42px;
+      }
+    }
+    
     
     /* Research Logos */
     .research-logos {
@@ -1320,33 +1384,15 @@
   </div>
   <h3 class="collaborators-title">Collaborators</h3>
   <div class="collaborator-logos">
-    <div class="logo-card">
-      <img src="./logos/yonsei.png" alt="Yonsei University">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/dnp.png" alt="D&P">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/dnuh.png" alt="Dankook University Hospital">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/kbsh.png" alt="Kangbuk Samsung Hospital">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/knuh.png" alt="Kyungpook National University Chilgok Hospital">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/lg.png" alt="LG">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/severance.png" alt="Severance Hospital">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/smc.png" alt="Samsung Medical Center">
-    </div>
-    <div class="logo-card">
-      <img src="./logos/vuno.png" alt="VUNO">
-    </div>
+    <div class="logo-card"><img src="./logos/yonsei_03.jpg" alt="Yonsei University"></div>
+    <div class="logo-card"><img src="./logos/lg.png" alt="LG"></div>
+    <div class="logo-card"><img src="./logos/dnp.png" alt="D&P"></div>
+    <div class="logo-card"><img src="./logos/vuno.png" alt="VUNO"></div>
+    <div class="logo-card"><img src="./logos/dnuh.png" alt="Dankook University Hospital"></div>
+    <div class="logo-card"><img src="./logos/kbsh.png" alt="Kangbuk Samsung Hospital"></div>
+    <div class="logo-card"><img src="./logos/knuh.png" alt="Kyungpook National University Chilgok Hospital"></div>
+    <div class="logo-card"><img src="./logos/severance.png" alt="Severance Hospital"></div>
+    <div class="logo-card"><img src="./logos/smc.png" alt="Samsung Medical Center"></div>
   </div>
 </section>
 
