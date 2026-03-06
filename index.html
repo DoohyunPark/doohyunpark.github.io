@@ -986,7 +986,7 @@
         <div class="pub-content">
           <div class="pub-venue">[21] 2025 Preprints</div>
           <h3 class="pub-title">Multi-center Validation of Pulmonary Nodule Classification Model for Lung Cancer Screening</h3>
-          <p class="pub-authors"><span class="me">Doohyun Park</span>, Jung-Hyun Kang, C Park</p>
+          <p class="pub-authors"><span class="me">Doohyun Park</span>, Jung-Hyun Kang, Changhyun Park</p>
         </div>
       </div>
   
@@ -1026,7 +1026,7 @@
         <div class="pub-content">
           <div class="pub-venue">[16] 2025 JRC, Journal of Radiology Case Reports</div>
           <h3 class="pub-title">Fully Automated Segment-Anything-Model for Robust Lobe Segmentation in Patients with Interstitial Lung Disease</h3>
-          <p class="pub-authors">S Lim, <span class="me">Doohyun Park</span>, Jonghun Jeong, Changhyun Park, Kyoung Min Moon</p>
+          <p class="pub-authors">Sungjoo Lim, <span class="me">Doohyun Park</span>, Jonghun Jeong, Changhyun Park, Kyoung Min Moon</p>
         </div>
       </div>
   
@@ -1066,7 +1066,7 @@
         <div class="pub-content">
           <div class="pub-venue">[11] 2024 RSNA, Radiological Society of North America</div>
           <h3 class="pub-title">Quantity or Certainty: Can Ambiguously Annotated Data Improve Lung Nodule Detection Performance?</h3>
-          <p class="pub-authors">C Park, Jung-Hyun Kang, <span class="me">Doohyun Park</span>, Jonghun Jeong</p>
+          <p class="pub-authors">Chanmin Park, Jung-Hyun Kang, <span class="me">Doohyun Park</span>, Jonghun Jeong</p>
         </div>
       </div>
   
@@ -1184,67 +1184,109 @@
     </div>
   </section>
 
-  <!-- Research -->
-  <section id="research">
-    <h2>Research</h2>
-  
-    <p class="research-intro">
-      My research is grounded in multi-institutional hospital collaborations
-      (Severance Hospital, Kyungpook National University Chilgok Hospital, Dankook University Hospital,
-      Samsung Medical Center, and others). I develop medical AI with real-world clinical data and workflows in mind,
-      spanning data curation, modeling, interpretability/evaluation, and clinical validation.
-    </p>
-  
-    <div class="research-grid">
-  
-      <div class="research-card">
-        <span class="research-tag">RWD · Collaboration</span>
-        <h3>Multi-institutional Clinical Research (Hospital Data)</h3>
-        <p>
-          End-to-end, clinically oriented projects built with hospital partners using real-world data.
-          I design studies to generalize across sites, handle heterogeneous acquisition protocols, and
-          produce evidence aligned with clinical deployment.
-        </p>
-      </div>
-  
-      <div class="research-card">
-        <span class="research-tag">Clinical AI</span>
-        <h3>Clinical-Grade Imaging AI (CT · Pathology WSI · Fundus)</h3>
-        <p>
-          Imaging models for detection, classification, segmentation, and prognosis—developed under practical
-          constraints and evaluated on clinically meaningful settings.
-        </p>
-      </div>
-  
-      <div class="research-card">
-        <span class="research-tag">Robustness</span>
-        <h3>Data-Centric Robust Learning</h3>
-        <p>
-          Reliability under imperfect supervision and distribution shift: noisy-label detection and dataset refinement,
-          plus OOD screening to reduce brittle behavior in real-world deployment.
-        </p>
-      </div>
-  
-      <div class="research-card">
-        <span class="research-tag">Foundation / SSL</span>
-        <h3>Representation Learning & Medical Foundation Models</h3>
-        <p>
-          Self-supervised representation learning to improve data efficiency and transfer across tasks and institutions,
-          with modality-aware inductive biases for medical images.
-        </p>
-      </div>
-  
-      <div class="research-card">
-        <span class="research-tag">Evaluation</span>
-        <h3>Deployment-Oriented Evaluation & Validation Protocols</h3>
-        <p>
-          Metrics and validation protocols tailored to clinical adoption: operating-point aware evaluation,
-          CAD-specific performance reporting, and multi-center generalization assessment.
-        </p>
-      </div>
-  
+<!-- Research -->
+<section id="research">
+  <h2>Research</h2>
+
+  <p class="research-intro">
+    I build clinically grounded medical AI across real-world data curation, modeling, robustness,
+    interpretability/evaluation, and multi-center validation—working with hospital collaborators.
+  </p>
+
+  <div class="research-grid">
+
+    <div class="research-card">
+      <span class="research-tag">Ophthalmology · SSL</span>
+      <h3>Self-Supervised Representation Learning for Medical Images</h3>
+      <p>
+        Proposed representation learning strategies that improve data efficiency and transfer across tasks,
+        emphasizing clinically important high-frequency structures.
+      </p>
     </div>
-  </section>
+
+    <div class="research-card">
+      <span class="research-tag">Pathology WSI · Multimodal</span>
+      <h3>Multimodal Prediction from Whole-Slide Pathology Images</h3>
+      <p>
+        Developed multimodal models combining whole-slide images with structured clinical variables to
+        support clinically useful predictions, validated across multiple cohorts.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">CT · Weak Supervision</span>
+      <h3>Label-Efficient Learning for 3D Clinical Imaging</h3>
+      <p>
+        Trained diagnostic models with weak supervision to reduce annotation cost, while maintaining
+        strong performance at clinically relevant granularity.
+      </p>
+    </div>
+    
+    <div class="research-card">
+      <span class="research-tag">Data-Centric · Noisy Labels</span>
+      <h3>Finding Noisy Labels with Minimal Assumptions</h3>
+      <p>
+        Developed a task-agnostic noisy-label detection method that produces stable per-sample quality scores,
+        enabling efficient dataset refinement.
+      </p>
+    </div>
+    
+    <div class="research-card">
+      <span class="research-tag">Review · Evaluation</span>
+      <h3>How to Evaluate Clinical Detection AI (CAD Metrics)</h3>
+      <p>
+        Synthesized practical evaluation principles for clinical detection systems—aligning metrics with
+        real workflows, operating points, and multi-reader reporting to make results deployment-relevant.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">CT · Image Quality</span>
+      <h3>Improving Clinical AI via Image Quality Enhancement</h3>
+      <p>
+        Developed deep learning methods that recover lost detail in low-quality / thick-slice imaging,
+        enabling more reliable downstream detection performance under real acquisition constraints.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">CT · Severity</span>
+      <h3>Quantifying Disease Severity from Routine Imaging</h3>
+      <p>
+        Built and validated severity assessment models on routine imaging data using clinically meaningful
+        targets, with cross-site validation for robustness across cohorts and protocols.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">Radiomics · Robustness</span>
+      <h3>Making Quantitative Imaging Models Robust Across Scanners</h3>
+      <p>
+        Studied how normalization and preprocessing choices affect reproducibility and generalization,
+        improving stability of quantitative imaging pipelines across heterogeneous acquisition settings.
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">Reliability · OOD</span>
+      <h3>Detecting Out-of-Distribution Inputs for Safer Deployment</h3>
+      <p>
+        Evaluated OOD detection approaches to screen unexpected inputs in medical imaging pipelines, comparing
+        classical ML and deep learning under deployment constraints (accuracy, latency, simplicity).
+      </p>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag">Optic Image · Applied AI</span>
+      <h3>AI-Based Make-up Level Assessment from Optic Images</h3>
+      <p>
+        Built an image-based assessment pipeline to quantify make-up level, focusing on consistent scoring,
+        robustness to capture conditions, and practical usability for real workflows.
+      </p>
+    </div>
+    
+  </div>
+</section>
 
   <!-- CV Download -->
   <section>
