@@ -428,6 +428,50 @@
       letter-spacing: 0.02em;
     }
 
+    .collaborators-title {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+    
+    /* 로고 grid */
+    .collaborator-logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.2rem;
+    }
+    
+    /* 로고 카드 */
+    .logo-card {
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+    
+    /* 실제 로고 */
+    .logo-card img {
+      max-height: 48px;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    
+      filter: grayscale(100%);
+      opacity: 0.75;
+      transition: all 0.2s ease;
+    }
+    
+    .logo-card img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+    
     /* Research Logos */
     .research-logos {
       display: flex;
@@ -1179,14 +1223,6 @@
 <!-- Research -->
 <section id="projects">
   <h2>Projects</h2>
-
-  <p class="section-intro">
-    Through collaborations with Severance Hospital, Dankook University Hospital, Samsung Medical Center,
-    Kangbuk Samsung Hospital, and Kyungpook National University Chilgok Hospital, I have worked on a wide
-    range of clinical AI research projects using multi-institutional real-world data across diverse imaging
-    modalities. I also have experience collaborating with industry partners including LG, VUNO, and D&P.
-  </p>
-  
   <div class="research-grid">
 
     <div class="research-card">
@@ -1281,6 +1317,36 @@
       </p>
     </div>
     
+  </div>
+  <h3 class="collaborators-title">Collaborators</h3>
+  <div class="collaborator-logos">
+    <div class="logo-card">
+      <img src="./logos/yonsei.png" alt="Yonsei University">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/dnp.png" alt="D&P">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/dnuh.png" alt="Dankook University Hospital">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/kbsh.png" alt="Kangbuk Samsung Hospital">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/knuh.png" alt="Kyungpook National University Chilgok Hospital">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/lg.png" alt="LG">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/severance.png" alt="Severance Hospital">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/smc.png" alt="Samsung Medical Center">
+    </div>
+    <div class="logo-card">
+      <img src="./logos/vuno.png" alt="VUNO">
+    </div>
   </div>
 </section>
 
