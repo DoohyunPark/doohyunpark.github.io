@@ -3,8 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Doohyun Park | Medical AI Research Scientist</title>
-  <meta name="description" content="Research Scientist (Medical AI). Clinically validated AI across CT, WSI, and fundus imaging." />
+  <meta
+    name="description"
+    content="Doohyun Park is a Medical AI Research Scientist based in Seoul, Republic of Korea, working on CT, whole slide imaging (WSI), and fundus imaging."
+  />
+
+  <link rel="canonical" href="https://doohyunpark.github.io/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Doohyun Park | Medical AI Research Scientist" />
+  <meta
+    property="og:description"
+    content="Medical AI researcher working on CT, whole slide imaging (WSI), and fundus imaging."
+  />
+  <meta property="og:url" content="https://doohyunpark.github.io/" />
+  <meta property="og:image" content="https://doohyunpark.github.io/photo.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Doohyun Park | Medical AI Research Scientist" />
+  <meta
+    name="twitter:description"
+    content="Medical AI researcher working on CT, whole slide imaging (WSI), and fundus imaging."
+  />
+  <meta name="twitter:image" content="https://doohyunpark.github.io/photo.jpg" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1537,39 +1561,6 @@
       }
     });
 
-    // Real-time clock
-    function updateClock() {
-      const now = new Date();
-
-      // KST
-      const kstOptions = {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false,
-        timeZone: 'Asia/Seoul'
-      };
-      document.getElementById('clockKST').textContent = now.toLocaleString('en-US', kstOptions) + ' KST';
-
-      // UTC
-      const utcOptions = {
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false,
-        timeZone: 'UTC'
-      };
-      document.getElementById('clockUTC').textContent = now.toLocaleString('en-US', utcOptions) + ' UTC';
-    }
-
-    updateClock();
-    setInterval(updateClock, 1000);
   </script>
 </body>
 </html>
