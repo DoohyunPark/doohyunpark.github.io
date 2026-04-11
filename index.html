@@ -464,96 +464,6 @@
 
 
 
-
-
-
-
-
-    
-    .collaborators-title {
-      margin-top: 3rem;
-      margin-bottom: 1.25rem;
-      font-family: var(--font-display);
-      font-weight: 500;
-      font-size: 1.3rem;
-      color: var(--text-secondary);
-    }
-    
-    .collaborator-logos {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.25rem 1.5rem;
-      align-items: center;
-    }
-    
-    .logo-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 88px;
-      width: 100%;
-      overflow: hidden;
-    }
-    
-    .logo-card img {
-      display: block;
-      max-height: 56px;
-      max-width: 100%;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      opacity: 0.95;
-      transition: opacity 0.2s ease, transform 0.2s ease;
-    }
-    
-    .logo-card img:hover {
-      opacity: 1;
-      transform: translateY(-1px);
-    }
-    
-    /* PC에서만 약한 미세 보정 */
-    .logo-card img[alt="Yonsei University"] {
-      max-height: 60px;
-      max-width: 60px;
-    }
-    
-    .logo-card img[alt="D&P"] {
-      max-height: 44px;
-    }
-    
-    .logo-card img[alt="Severance Hospital"] {
-      max-height: 46px;
-    }
-    
-    .logo-card img[alt="Samsung Medical Center"] {
-      max-height: 42px;
-    }
-    
-    @media (max-width: 768px) {
-      .collaborator-logos {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.9rem;
-      }
-    
-      .logo-card {
-        height: 72px;
-        padding: 0.5rem 0.75rem;
-      }
-    
-      .logo-card img,
-      .logo-card img[alt="Yonsei University"],
-      .logo-card img[alt="D&P"],
-      .logo-card img[alt="Dankook University Hospital"],
-      .logo-card img[alt="Kangbuk Samsung Hospital"],
-      .logo-card img[alt="Kyungpook National University Chilgok Hospital"],
-      .logo-card img[alt="LG"],
-      .logo-card img[alt="Severance Hospital"],
-      .logo-card img[alt="Samsung Medical Center"],
-      .logo-card img[alt="VUNO"] {
-        max-height: 42px;
-        max-width: 100%;
-      }
-    }
     
 
 
@@ -1406,20 +1316,6 @@
         leading to multiple domestic and international patents and technology transfer.
       </p>
     </div>
-    
-  </div>
-  <h3 class="collaborators-title">Research Collaborators</h3>
-  <div class="collaborator-logos">
-    <div class="logo-card"><img src="./logos/yonsei_03.jpg" alt="Yonsei University"></div>
-    <div class="logo-card"><img src="./logos/lg.png" alt="LG"></div>
-    <div class="logo-card"><img src="./logos/dnp.png" alt="D&P"></div>
-    <div class="logo-card"><img src="./logos/vuno.png" alt="VUNO"></div>
-    <div class="logo-card"><img src="./logos/dnuh.png" alt="Dankook University Hospital"></div>
-    <div class="logo-card"><img src="./logos/kbsh.png" alt="Kangbuk Samsung Hospital"></div>
-    <div class="logo-card"><img src="./logos/knuh.png" alt="Kyungpook National University Chilgok Hospital"></div>
-    <div class="logo-card"><img src="./logos/severance.png" alt="Severance Hospital"></div>
-    <div class="logo-card"><img src="./logos/smc.png" alt="Samsung Medical Center"></div>
-  </div>
 </section>
 
   <!-- CV Download -->
