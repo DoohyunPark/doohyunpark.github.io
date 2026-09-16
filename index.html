@@ -481,74 +481,6 @@
       gap: 0;
     }
 
-    /* Research Areas */
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .research-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      padding: 1.5rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      display: flex;
-      flex-direction: column;
-      min-height: 240px;
-    }
-
-    .research-card:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .research-card h3 {
-      font-family: var(--font-display);
-      font-size: 1rem;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-      color: var(--text-primary);
-    }
-
-    .research-card p {
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      flex-grow: 1;
-    }
-
-
-
-
-    
-
-
-
-
-
-
-    
-    /* Research Logos */
-    .research-logos {
-      display: flex;
-      gap: 1rem;
-      margin-top: auto;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-      align-items: center;
-      min-height: 45px;
-    }
-
-    .research-logos img {
-      height: 28px;
-      width: auto;
-      object-fit: contain;
-      opacity: 0.85;
-      transition: opacity 0.2s;
-    }
-
-    .research-logos img:hover { opacity: 1; }
-
     /* CV Download */
     .cv-section {
       background: var(--bg-secondary);
@@ -772,7 +704,6 @@
     #publications { animation-delay: 0.15s; }
     #other-publications { animation-delay: 0.18s; }
     #patents { animation-delay: 0.2s; }
-    #projects { animation-delay: 0.25s; }
     #contact { animation-delay: 0.35s; }
   </style>
 </head>
@@ -787,7 +718,6 @@
         <a href="#publications" data-page="publications" onclick="navigateToPage('publications'); return false;">Selected Publications</a>
         <a href="#other-publications" data-page="other-publications" onclick="navigateToPage('other-publications'); return false;">Other Publications</a>
         <a href="#patents" data-page="patents" onclick="navigateToPage('patents'); return false;">Patents</a>
-        <a href="#projects" data-page="projects" onclick="navigateToPage('projects'); return false;">Projects</a>
         <a href="#cv" data-page="cv" onclick="navigateToPage('cv'); return false;">CV</a>
         <a href="#contact" data-page="contact" onclick="navigateToPage('contact'); return false;">Contact</a>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
@@ -806,7 +736,6 @@
     <a href="#publications" data-page="publications" onclick="navigateToPage('publications'); return false;">Selected Publications</a>
     <a href="#other-publications" data-page="other-publications" onclick="navigateToPage('other-publications'); return false;">Other Publications</a>
     <a href="#patents" data-page="patents" onclick="navigateToPage('patents'); return false;">Patents</a>
-    <a href="#projects" data-page="projects" onclick="navigateToPage('projects'); return false;">Projects</a>
     <a href="#cv" data-page="cv" onclick="navigateToPage('cv'); return false;">CV</a>
     <a href="#contact" data-page="contact" onclick="navigateToPage('contact'); return false;">Contact</a>
   </div>
@@ -929,7 +858,7 @@
           </p>
           <p class="pub-note">* Equally contributed</p>
           <div class="pub-links">
-            <a href="https://doohyunpark.github.io/" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> URL</a>
+            <a href="https://doi.org/10.1371/journal.pdig.0001700" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> URL</a>
           </div>
         </div>
       </div>
@@ -1346,89 +1275,6 @@
 
   </main>
 
-  
-<!-- Research -->
-<main id="page-projects" class="page">
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="research-grid">
-
-    <div class="research-card">
-      <h3>Representation Learning for Fine-Grained Visual Patterns</h3>
-      <p>
-        Developed self-supervised learning methods to capture subtle local patterns in large-scale image
-        datasets, especially when task-specific labels are limited or expensive to obtain.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Noisy Label Detection and Dataset Refinement</h3>
-      <p>
-        Designed data-centric methods to identify potentially mislabeled samples, supporting more reliable
-        training datasets, cleaner evaluation sets, and more trustworthy model development.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Image Enhancement for Downstream Analysis</h3>
-      <p>
-        Developed deep learning-based image enhancement methods to improve the visibility of small or
-        subtle visual structures before applying downstream detection or classification models.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Weakly Supervised Detection with Limited Annotation</h3>
-      <p>
-        Built weakly supervised learning frameworks that use coarse image-level labels to infer more
-        detailed object-level or region-level patterns, reducing the need for exhaustive manual annotation.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Multimodal Modeling from Images and Structured Data</h3>
-      <p>
-        Developed models that combine visual features from large-scale images with structured variables,
-        enabling prediction workflows that use complementary information from multiple data sources.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Robust Modeling Across Heterogeneous Data Conditions</h3>
-      <p>
-        Studied preprocessing, normalization, and feature selection strategies to improve model robustness
-        when data are collected under different acquisition settings, devices, or environments.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Evaluation Frameworks for Detection Models</h3>
-      <p>
-        Organized evaluation criteria for detection systems by separating image-level and object-level
-        performance concepts, supporting clearer model comparison and failure analysis.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Out-of-Distribution Detection for Reliable Deployment</h3>
-      <p>
-        Compared methods for identifying samples that differ from the training distribution, with an
-        emphasis on model reliability, practical deployment constraints, and data quality monitoring.
-      </p>
-    </div>
-
-    <div class="research-card">
-      <h3>Data-Driven Workflow and Decision Analysis</h3>
-      <p>
-        Translated model outputs into scenario-based workflow analyses, focusing on how predictive models
-        can support operational decisions, workload reduction, and evidence-based process design.
-      </p>
-    </div>
-
-  </div>
-</section>
-</main>
-
   <main id="page-cv" class="page">
   <!-- CV Download -->
   <section id="cv">
@@ -1549,7 +1395,7 @@
     })();
 
     // Page-style navigation
-    const pageIds = ['home', 'publications', 'other-publications', 'patents', 'projects', 'cv', 'contact'];
+    const pageIds = ['home', 'publications', 'other-publications', 'patents', 'cv', 'contact'];
 
     function showPage(pageId, updateHash = true) {
       if (!pageIds.includes(pageId)) pageId = 'home';
