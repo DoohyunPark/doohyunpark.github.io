@@ -1,3 +1,16 @@
+
+
+붙여넣은 텍스트(1).txt
+문서
+여기서 CV 관련 항목 삭제해서 full txt 보내줘
+CV 메뉴, 다운로드 영역, 관련 CSS와 페이지 설정을 삭제한 전체 TXT입니다.
+
+
+CV_removed_full.txt
+문서
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -481,46 +494,6 @@
       gap: 0;
     }
 
-    /* CV Download */
-    .cv-section {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      padding: 2.5rem;
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    .cv-section h3 {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-    }
-
-    .cv-section p {
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-    }
-
-    .cv-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--font-display);
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: #fff;
-      background: var(--accent);
-      padding: 0.75rem 1.75rem;
-      text-decoration: none;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .cv-button:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
-    }
-
     /* Contact */
     .contact-grid {
       display: grid;
@@ -718,7 +691,6 @@
         <a href="#publications" data-page="publications" onclick="navigateToPage('publications'); return false;">Selected Publications</a>
         <a href="#other-publications" data-page="other-publications" onclick="navigateToPage('other-publications'); return false;">Other Publications</a>
         <a href="#patents" data-page="patents" onclick="navigateToPage('patents'); return false;">Patents</a>
-        <a href="#cv" data-page="cv" onclick="navigateToPage('cv'); return false;">CV</a>
         <a href="#contact" data-page="contact" onclick="navigateToPage('contact'); return false;">Contact</a>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
           <i class="fas fa-bars"></i>
@@ -736,7 +708,6 @@
     <a href="#publications" data-page="publications" onclick="navigateToPage('publications'); return false;">Selected Publications</a>
     <a href="#other-publications" data-page="other-publications" onclick="navigateToPage('other-publications'); return false;">Other Publications</a>
     <a href="#patents" data-page="patents" onclick="navigateToPage('patents'); return false;">Patents</a>
-    <a href="#cv" data-page="cv" onclick="navigateToPage('cv'); return false;">CV</a>
     <a href="#contact" data-page="contact" onclick="navigateToPage('contact'); return false;">Contact</a>
   </div>
 
@@ -1292,23 +1263,6 @@
 
   </main>
 
-  <main id="page-cv" class="page">
-  <!-- CV Download -->
-  <section id="cv">
-    <div class="cv-section">
-      <h3>Curriculum Vitae</h3>
-      <p>Download my full CV.</p>
-      <a href="https://drive.google.com/file/d/1M9yTw9PGOjAx8tDY_5IsDh_qYjjMuCWk/view?usp=drive_link"
-         class="cv-button"
-         target="_blank"
-         rel="noopener noreferrer">
-        <i class="fas fa-download"></i> Download CV (PDF)
-      </a>
-    </div>
-  </section>
-
-  </main>
-
   <main id="page-contact" class="page">
   <!-- Contact -->
   <section id="contact">
@@ -1412,7 +1366,7 @@
     })();
 
     // Page-style navigation
-    const pageIds = ['home', 'publications', 'other-publications', 'patents', 'cv', 'contact'];
+    const pageIds = ['home', 'publications', 'other-publications', 'patents', 'contact'];
 
     function showPage(pageId, updateHash = true) {
       if (!pageIds.includes(pageId)) pageId = 'home';
